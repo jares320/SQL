@@ -1,0 +1,13 @@
+--create a store that sells soccer jerseys
+
+create table soccer_world (id integer primary key, item text, size text, color text, price integer, quantity integer);
+
+insert into soccer_world values (1, "jersey", "medium", "black", 25, 12);
+insert into soccer_world values (2, "jersey",
+"small", "black", 25, 8);
+insert into soccer_world values (3, "jersey", "large", "black", 25, 7);
+insert into soccer_world values (4, "jersey", "xlarge", "black", 25, 1);
+
+
+--display the database ordered by the quatity 
+select * from soccer_world order by quantity; 
